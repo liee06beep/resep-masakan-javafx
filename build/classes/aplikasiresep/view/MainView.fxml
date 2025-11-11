@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="aplikasiresep.controller.ResepController">
+
+    <center>
+        <VBox spacing="10" padding="10">
+            <TextField fx:id="namaField" promptText="Nama Resep" />
+            <TextArea fx:id="bahanArea" promptText="Bahan-bahan" prefHeight="100"/>
+            <TextArea fx:id="langkahArea" promptText="Langkah-langkah" prefHeight="100"/>
+
+            <HBox spacing="10">
+                <Button text="Tambah Resep" onAction="#tambahResep"/>
+                <Button text="Lihat Detail" onAction="#lihatDetail"/>
+            </HBox>
+
+            <ListView fx:id="daftarResep" prefHeight="200"/>
+        </VBox>
+    </center>
+
+</BorderPane>
